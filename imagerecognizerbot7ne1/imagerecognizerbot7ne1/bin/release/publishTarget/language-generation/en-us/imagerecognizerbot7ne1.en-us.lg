@@ -1,0 +1,97 @@
+[import](common.lg)
+
+# SendActivity_Welcome()
+- Hello there!!! I am Plasma how can I be of help to you today?
+- Hello there ! How can I assist you today then?
+- Hello there ! How may I help you?
+
+
+
+
+
+
+
+
+
+# SendActivity_003038()
+-Sorry. I am new to this Human language thingy, I could understand what you just said...
+
+# HeroCard()
+[HeroCard
+    title = Here is the attachment
+    text = Description:- ${dialog.visionApiResponse.content.description.captions[0].text}  \r\n Tags:- ${replace(string(dialog.visionApiResponse.content.description.tags),'\r\n', '')}
+    image = ${dialog.attachment[0].contentUrl}
+ ]
+# AttachmentInput_Prompt_wsGWFU()
+- Sure! Please upload the image you would like me to analyse or describe?
+# SendActivity_2bB4Yz()
+-
+# SendActivity_LzwxvQ()
+[HeroCard
+    title = Here's my analysis on the image
+    text = Description:- ${dialog.visionApiResponse.content.description.captions[0].text}  \r\n Tags:- ${replace(string(dialog.visionApiResponse.content.description.tags),'\r\n', '')}
+    image = ${dialog.attachments[0].contentUrl}
+ ]
+# SendActivity_jIsSED()
+- Lets check the weather
+# TextInput_Prompt_aEe2Ch()
+- Which city would you like to check the weather for?
+# TextInput_UnrecognizedPrompt_aEe2Ch()
+- Sorry, I do not understand '${this.value}'. Please specify a 5 digit postal code in the format 12345.
+# SendActivity_b8WNpL()
+
+[ThumbnailCard
+   title = Weather in ${dialog.city} in ${dialog.country}
+   text =  It is "${dialog.weather}" in ${user.postalcode} and the temperature is ${dialog.fahrenheit}&deg;F or ${dialog.celsius}&deg;C. Have a nice day.
+   image = http://openweathermap.org/img/wn/${dialog.icon}@2x.png
+]
+
+# SendActivity_51as58()
+- Something went wrong: ${dialog.api_response.content.message}.
+# DescribeWeather(weather)
+- IF: ${weather.weather=="Clouds"}
+    - It is cloudy
+- ELSEIF: ${weather.weather=="Thunderstorm"}
+    - There's a thunderstorm
+- ELSEIF: ${weather.weather=="Drizzle"}
+    - It is drizzling
+- ELSEIF: ${weather.weather=="Rain"}
+    - It is raining
+- ELSEIF: ${weather.weather=="Snow"}
+    - There's snow
+- ELSEIF: ${weather.weather=="Clear"}
+    - The sky is clear
+- ELSEIF: ${weather.weather=="Mist"}
+    - There's a mist in the air
+- ELSEIF: ${weather.weather=="Smoke"}
+    - There's smoke in the air
+- ELSEIF: ${weather.weather=="Haze"}
+    - There's a haze
+- ELSEIF: ${weather.weather=="Dust"}
+    - There's a dust in the air
+- ELSEIF: ${weather.weather=="Fog"}
+    - It's foggy
+- ELSEIF: ${weather.weather=="Ash"}
+    - There's ash in the air
+- ELSEIF: ${weather.weather=="Squall"}
+    - There's a squall
+- ELSEIF: ${weather.weather=="Tornado"}
+    - There's a tornado happening
+- ELSE:
+    - ${weather.weather}
+# TextInput_Prompt_jK3bBI()
+[Activity
+    Text = ${expandText(@answer)}
+    SuggestedActions = ${foreach(turn.recognized.answers[0].context.prompts, x, x.displayText)}
+]
+
+# SendActivity_Fg4T8m()
+- ${expandText(@answer)}
+
+# SendActivity_KQ5GUa()
+[Activity
+    Text = ${SendActivity_KQ5GUa_text()}
+]
+
+# SendActivity_KQ5GUa_text()
+- You can try commands like: \n Get weather \n Describe image \n or Just chat with me for fun!

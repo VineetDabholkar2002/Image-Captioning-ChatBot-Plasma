@@ -1,0 +1,7 @@
+{
+  "$kind": "Microsoft.CrossTrainedRecognizerSet",
+  "recognizers": [
+    "imagerecognizerbot7ne1.lu",
+    "imagerecognizerbot7ne1.qna"
+  ]
+}

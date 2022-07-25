@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "QnA_imagerecognizerbot7ne1",
+  "recognizers": {
+    "en-us": "imagerecognizerbot7ne1.en-us.qna",
+    "": "imagerecognizerbot7ne1.en-us.qna"
+  }
+}

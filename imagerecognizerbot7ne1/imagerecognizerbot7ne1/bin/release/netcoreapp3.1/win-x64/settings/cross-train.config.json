@@ -1,0 +1,15 @@
+{
+  "imagerecognizerbot7ne1.en-us": {
+    "rootDialog": true,
+    "triggers": {
+      "UploadImage": "",
+      "GetWeather": "",
+      "cancel": [
+        "CancelDialog.en-us"
+      ],
+      "help": [
+        "HelpDialog.en-us"
+      ]
+    }
+  }
+}

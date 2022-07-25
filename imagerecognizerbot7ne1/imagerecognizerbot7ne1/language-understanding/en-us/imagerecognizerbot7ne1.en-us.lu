@@ -1,0 +1,66 @@
+
+# UploadImage
+-Analyse my Image please
+-Can you analyze this image
+-Describe this image
+-What is there in this image
+
+# OCR
+
+-ocr
+
+
+# GetWeather
+> add some example phrases to trigger this intent:
+> - please tell me the weather
+> - what is the weather like in {city=Seattle}
+
+> entity definitions:
+> @ ml city
+-weather
+-get weather
+-whats the weather like today
+-rain?
+-how is it outside?
+
+# cancel
+> add some example phrases to trigger this intent:
+> - please tell me the weather
+> - what is the weather like in {city=Seattle}
+
+> entity definitions:
+> @ ml city
+-cancel
+-quit
+
+# help
+> add some example phrases to trigger this intent:
+> - please tell me the weather
+> - what is the weather like in {city=Seattle}
+
+> entity definitions:
+> @ ml city
+-help
+-need help
+-?
+
+# GetNews
+> add some example phrases to trigger this intent:
+> - please tell me the weather
+> - what is the weather like in {city=Seattle}
+
+> entity definitions:
+> @ ml city
+-Get news
+-latest news
+-whats the news
+
+
+# GetMeme
+> add some example phrases to trigger this intent:
+> - please tell me the weather
+> - what is the weather like in {city=Seattle}
+
+> entity definitions:
+> @ ml city
+- Meme

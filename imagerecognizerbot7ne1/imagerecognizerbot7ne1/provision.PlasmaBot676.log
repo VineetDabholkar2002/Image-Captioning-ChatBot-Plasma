@@ -1,0 +1,20 @@
+{
+  "profileName": "PlasmaBot676",
+  "jobId": "65f5361c-6882-4d26-a7fc-53488c333b38",
+  "projectId": "54394.72676412518",
+  "time": "2022-07-08T05:50:53.282Z",
+  "log": [
+    "Creating Azure resources...",
+    "Checking the Existence of the Resource Group ...",
+    "Use the Resource Group: Plasma at westeurope",
+    "> Creating App Registration ...",
+    "Start to add password for App, Id : 9dd8161c-159a-41ce-918d-65f43df5ee2a",
+    "> Create App Registration Success! ID: 9dd8161c-159a-41ce-918d-65f43df5ee2a",
+    "Deploying Web App Resource ...",
+    "Deploying Bot Resource ...",
+    "Deploying Luis Authoring Resource ...",
+    "Deploying Luis Resource ...",
+    "Deploying QnA Resource ...",
+    "Provisioning completed successfully!"
+  ]
+}

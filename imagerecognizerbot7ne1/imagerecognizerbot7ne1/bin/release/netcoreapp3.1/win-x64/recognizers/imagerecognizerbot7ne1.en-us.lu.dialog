@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.LuisRecognizer",
+  "id": "LUIS_imagerecognizerbot7ne1",
+  "applicationId": "=settings.luis.imagerecognizerbot7ne1_en_us_lu.appId",
+  "version": "=settings.luis.imagerecognizerbot7ne1_en_us_lu.version",
+  "endpoint": "=settings.luis.endpoint",
+  "endpointKey": "=settings.luis.endpointKey"
+}
