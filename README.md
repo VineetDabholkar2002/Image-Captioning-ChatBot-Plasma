@@ -20,5 +20,6 @@ A Telegram Chatbot with chit-chat that describes the objects present in an image
 ![Screenshot (106)](https://user-images.githubusercontent.com/93699671/180841524-1f7f3d8a-3083-469a-a5a5-0ef35a15fc50.png)
 
 
+![image](https://user-images.githubusercontent.com/93699671/180843531-2a307d1f-02e9-42f3-bb22-943537505239.png)
 
 
