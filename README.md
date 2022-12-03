@@ -1,4 +1,4 @@
-# Image-Recognizer-Bot-Plasma
+# Image-Captioning-ChatBot-Plasma
 A Telegram Chatbot with chit-chat that describes the objects present in an image, gives the weather and news using Azure’s Computer Vision, OpenWeather API and NewsAPI deployed using Azure.
 
 
