@@ -23,3 +23,4 @@ A Telegram Chatbot with chit-chat that describes the objects present in an image
 ![image](https://user-images.githubusercontent.com/93699671/180843531-2a307d1f-02e9-42f3-bb22-943537505239.png)
 
 
+Created by Vineet Dabholkar and <a src ="https://github.com/Adipaddy">Aditya Waichol</a>
